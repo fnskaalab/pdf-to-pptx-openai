@@ -1,0 +1,5 @@
+openai-python 
+python-pptx 
+pdfminer.six 
+requests 
+python-dotenv
