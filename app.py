@@ -34,7 +34,7 @@ def generer_resume(texte_pdf):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="gpt-4",
+            model="gpt-3.5-turbo",
         )
         reponse_json = chat_completion.choices[0].message.content.strip()
         return json.loads(reponse_json)  # Convertir en dict Python
